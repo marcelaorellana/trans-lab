@@ -45,9 +45,14 @@ $("#linkInicio").on("click", function(e){
 
     if(regexEmail.test(email) && email.indexOf('@') != -1 && email != "" && regexPass.test(pass) && pass != ""){
         localStorage.setItem("email", email);
-        
+
     }else{
         e.preventDefault();
     }
 });
+
+$("#open-hide").click(function() {
+		$("#menu").toggleClass("show");
+		$("#content").toggleClass("open-menu");
+	}); 
 });
