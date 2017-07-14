@@ -55,6 +55,7 @@ $("#boton-ver").on("click", function(e){
 		var saldo = bip.saldoTarjeta;
 
 		$(".tu-saldo").empty();
+		
 		var texto = ("<h3>SALDO TOTAL</h3><div class='saldo'><p id='saldo-final'>"+ saldo+"</p></div>")
 
 		$(".tu-saldo").append(texto);
