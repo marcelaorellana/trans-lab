@@ -15,6 +15,9 @@ select{
     height: 40px;
     background-color: white;
 }
+.seleccion{
+    width: 100%;
+}
 button{
     background-color: #FCAD00;
     border: none;
