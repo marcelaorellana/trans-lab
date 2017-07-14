@@ -31,7 +31,7 @@ $("#boton-ver").on("click", function(e){
 		}
 
 		$.ajax({
-			url : 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json',
+			url : 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json',
 			type : 'GET',
 			datatype : 'json',
 			data : {'bip': valor}
