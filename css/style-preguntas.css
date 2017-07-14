@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -46,7 +46,7 @@ table {
    amarillo #FCAD00
    gris claro #DDDEE0
 /********************fin reset***************************/
-body{
+body#preguntas-body{
     background-color: #DDDEE0;
     font-family: 'Rubik', sans-serif;
     height: 100vh;
@@ -57,7 +57,6 @@ header{
 header h3{
     color: white;
     text-align: center;
-    padding: 10px;
 }
 .menu {
     background-color: #fff;
@@ -97,8 +96,8 @@ header h3{
 }
 .open-hide {
     background-color: transparent;
-    width: 40px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center center;
@@ -106,6 +105,7 @@ header h3{
     background-size: 25px;
     text-indent: -9999em;
     transition: none;
+    margin: 1em;
     opacity: 0;
 }
 .open-hide:hover {
@@ -114,7 +114,18 @@ header h3{
 .open-menu {
         height: 100vh;
 }
-
+.show {
+    background-image: url("../img/");
+    background-size: 15px;
+}
+.show + .open-hide {
+    width: 40vw;
+    height: 100vh;
+    background-image: none;
+    position: absolute;
+    opacity: .5;
+    margin: 0;
+}
 #menu-aside {
     position: absolute;
     z-index: 100;
@@ -134,7 +145,7 @@ header h3{
 .show.menu {
     width: 60vw;
 }
-.show + .open-hide { 
+.show + .open-hide {
     width: 40vw;
     height: 100vh;
     background-image: none;
@@ -154,13 +165,26 @@ header h3{
 .fa{
     color: #FCAD00;
 }
-#side-menu{
-    width: 30px;
-    border: none;
-    background-color: transparent;
-    margin-left: 5px;
+
+/**********************************************/
+
+.cuadro{
+	background-color: #FCAD00;
+	height: 30vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#side-menu i{
-    font-size: 30px;
-    color: white;
+.cuadro h1{
+	color: white;
+	font-size: 40px;
+}
+.preg{
+	
+	width: 80%;
+	margin: auto;
+}
+.preg p{
+	padding: 8px;
 }

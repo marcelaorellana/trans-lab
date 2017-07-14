@@ -1,0 +1,12 @@
+.botones-menu button{
+	width: 80%;
+	margin: auto;
+	border: none;
+	background-color: #FCAD00;
+	padding: 20px 30px;
+	margin-top: 20px;
+	color: white;
+}
+.botones-menu .col-xs-12{
+	text-align: center;
+}
