@@ -25,7 +25,7 @@ $(document).ready(function(){
      $(".malo").hide();
      $(".tarjetas-guardadas").append("<div class='num-area'><p id='num"+cont+"'>"+numero+"</p></div>");
      cont++;
-     localStorage.setItem(cont, numero);
+     localStorage.setItem("bip"+cont, numero);
      $("#tarjeta-input").val("");
     }
   });
@@ -35,7 +35,7 @@ $(document).ready(function(){
     var regexStorage = new RegExp("^([0-9]{8})$");
     var kei = localStorage.key(i);
     var valuee = localStorage.getItem(kei);
-    if(regexStorage.test(valuee)){
+    if(kei.startsWith("bip")){
       $(".tarjetas-guardadas").append("<div class='num-area'><p id='num"+kei+"'>"+valuee+"</p></div>");
     }
     
