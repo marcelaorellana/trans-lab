@@ -165,25 +165,11 @@ header h3{
 .fa{
     color: #FCAD00;
 }
-/****************************************/
-.foto{
-    background-color: #FCAD00; /*amarillo*/
-    padding: 10px;
-    text-align: center;
-}
-.circulo{
-    background-image: url("../docs/bike-1.png");
-    background-size: cover;
-    background-position: center;
-    background-color: pink;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px; 
-    margin: auto;
-    /* width and height can be anything, as long as they're equal */
-}
 
-.malo{
-    display: none;
-    color: white;
+/********************************************/
+.ver-saldo *{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin: 20px;n
 }

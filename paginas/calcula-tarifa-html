@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<title>Trans Lab</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Desarrollo de Ejercicio Evaluado en equipo de la Lección 36: AJAX y API Calls">
+	<meta name="author" content="Marcela Orellana">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Fontawesome -->
+	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style-ver-saldo.css">
+</head>
+<body id="ver-saldo-body">
+	<menu id="menu-aside">
+		<ul id="menu" class="menu">
+			<li>
+				<a href="#">
+					<div class="icono"><i class="fa fa-usd" aria-hidden="true"></i></div>
+					<span>Ver Saldo</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="icono"><i class="fa fa-calculator" aria-hidden="true"></i></div>
+					<span>Calcular Tarifa</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="active">
+					<div class="icono"><i class="fa fa-user" aria-hidden="true"></i></div>
+					<span>Perfil</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="icono"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+					<span>Preguntas Frecuentes</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="icono"><i class="fa fa-home" aria-hidden="true"></i></div>
+					<span>Home</span>
+				</a>
+			</li>
+		</ul>
+		<a class="open-hide" id="open-hide"></a>
+	</menu>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="user-icon pull-left">
+					<button id="side-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
+				<h3>TRANS-LAB</h3>
+				
+			</div>
+		</div>
+	</header>
+
+	<section class="buscar container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ver-saldo">
+				<input type="text" id="input-ver">
+				<div class="seleccion">
+					<select name="tarjeta" id="elegir">
+						<option value="value1" disabled selected>Elije</option> 
+						<option value="value2">cosa</option> 
+					</select>
+					<select name="tarifa" id="tarifaId">
+						<option value="value1" disabled selected>Elije</option> 
+						<option value="value2">cosa</option>
+					</select>
+				</div>
+				<select name="tarjeta" id="elegir">
+					<option value="value1" disabled selected>Elije</option> 
+					<option value="value2">cosa</option> 
+				</select>
+				<button id="boton-ver">VER SALDO</button>
+			</div>
+		</div>
+	</section>
+	<section class="vista-saldo container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tu-saldo">
+				
+			</div>
+		</div>
+	</section>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Bootstrap Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="../js/ver-saldo.js" ></script>
+</body>
+</html>
