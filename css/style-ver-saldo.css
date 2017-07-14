@@ -1,175 +1,46 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/*********************color***************************/
-/* gris oscuro #414143
-   amarillo #FCAD00
-   gris claro #DDDEE0
-/********************fin reset***************************/
-body#perfil-body{
-    background-color: #DDDEE0;
-    font-family: 'Rubik', sans-serif;
-    height: 100vh;
-}
-header{
-    background-color: #414143;
-}
-header h3{
-    color: white;
-    text-align: center;
-}
-.menu {
-    background-color: #fff;
-    width: 0;
-    overflow-x: hidden;
-    transition: .5s ease all;
-    display: block;
-    height: 100vh;
-    float: left;
-    padding: 2em 0 0;
-}
-.menu li {
-    list-style: none;
-    padding: 1em 0;
-    margin: 0 1em;
-    border-bottom: 1px solid #eee;
-    font-size: 16px;
-    opacity: 0;
-}
 
-.show.menu li {
-    opacity: 1;
-}
-.menu li a {
-    text-decoration: none;
-    color: #333;
-}
-.menu li a:hover,
-.menu li a:focus,
-.menu li a.active {
-    color: #FCAD00;
-}
-.menu li a span.icon {
-    font-size: 20px;
-    display: inline-block;
-    margin: 0 .5em 0 .25em;
-}
-.open-hide {
-    background-color: transparent;
-    width: 45px;
-    height: 45px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: 25px;
-    background-size: 25px;
-    text-indent: -9999em;
-    transition: none;
-    margin: 1em;
-    opacity: 0;
-}
-.open-hide:hover {
-    cursor: pointer;
-}
-.open-menu {
-        height: 100vh;
-}
-.show {
-    background-image: url("../img/");
-    background-size: 15px;
-}
-.show + .open-hide {
-    width: 40vw;
-    height: 100vh;
-    background-image: none;
-    position: absolute;
-    opacity: .5;
-    margin: 0;
-}
-#menu-aside {
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    min-height: 100vh;
-}
-#menu-aside > * {
-    vertical-align: top;
-}
-#content {
-    float: left;
-    width: 100%;
-    display: block;
-    overflow: hidden;
-    transition: .5s ease all;
-}
-.show.menu {
-    width: 60vw;
-}
-.show + .open-hide {
-    width: 40vw;
-    height: 100vh;
-    background-image: none;
-    left: 60vw;
-    opacity: .5;
-    transition: .3s all ease-in-out;
-}
-.show + .open-hide + #content {
-    width: 40vw;
-    transition: .5s all ease;
-}
-.icono{
-    width: 25px;
-    margin: 0;
-    display: inline-block;
-}
-.fa{
-    color: #FCAD00;
-}
-
-/********************************************/
 .ver-saldo *{
     display: block;
     width: 90%;
     margin: auto;
-    margin: 20px;n
+    margin: 40px;
+}
+input{
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #414143;
+    background-color: transparent;
+  
+}
+select{
+    height: 40px;
+    background-color: white;
+}
+button{
+    background-color: #FCAD00;
+    border: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.tu-saldo{
+    width: 60%;
+    margin: auto;
+}
+.tu-saldo h3{
+    background-color: #414143;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.tu-saldo .saldo{
+    height: 10vh;
+    background-color: #FCAD00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tu-saldo .saldo p{
+    font-size: 20px;
 }

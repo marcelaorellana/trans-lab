@@ -5,6 +5,15 @@ $(document).ready(function(){
     $("#content").toggleClass("open-menu");
   });
 
+for(var i = 0; i < localStorage.length; i++){
+    var kei = localStorage.key(i);
+    var valuee = localStorage.getItem(kei);
+    if(kei.startsWith("bip")){
+      $("#elegir").append("<option value='" + valuee + "'>" + valuee + "</option>");
+    }   
+}
+
+
 $("#elegir").on("change", function(){
 	$("#input-ver").prop('disabled', true);
 	$("#input-ver").val("");
@@ -44,12 +53,15 @@ $("#boton-ver").on("click", function(e){
 
 	function verSaldo(bip){
 		var saldo = bip.saldoTarjeta;
+
+		$(".tu-saldo").empty();
 		var texto = ("<h3>SALDO TOTAL</h3><div class='saldo'><p id='saldo-final'>"+ saldo+"</p></div>")
 
 		$(".tu-saldo").append(texto);
 		
 	}
 	function malSaldo(){
+		$(".tu-saldo").empty();
 		$(".tu-saldo").append("<h3>SALDO TOTAL</h3><div class='saldo'><p id='saldo-final'>Tarjeta No válida</p></div>")
 	
 	}

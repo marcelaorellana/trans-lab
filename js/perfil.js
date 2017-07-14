@@ -16,7 +16,7 @@ $(document).ready(function(){
   } 
   $("#boton-tarjetas").on("click", function(e){
     var numero = $("#tarjeta-input").val();
-    var regexNum = new RegExp("^([0-9]{8})$");
+    var regexNum = new RegExp("^[0-9]*$");
 
     if(!regexNum.test(numero) || numero == ""){
     

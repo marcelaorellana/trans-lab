@@ -46,7 +46,7 @@ table {
    amarillo #FCAD00
    gris claro #DDDEE0
 /********************fin reset***************************/
-body#perfil-body{
+body{
     background-color: #DDDEE0;
     font-family: 'Rubik', sans-serif;
     height: 100vh;
