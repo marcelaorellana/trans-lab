@@ -1,25 +1,5 @@
 $(document).ready(function(){
-	/*$(document).on('keypress', '#datos-nombre', function (event) {
-	    var regex = new RegExp("^[a-zA-Z ]+$");
-	    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
-	    if (!regex.test(key)) {
-	        event.preventDefault();
-	        return false;
-	    }
-	});
-//solo acepta letras numeros @ y .
-$(document).on('keypress', '#datos-email', function (event) {
-    var regex = new RegExp("^[a-z0-9@.]+$");
-    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
-    if (!regex.test(key)) {
-        event.preventDefault();
-        return false;
-    }
-});
-$("#malo1").hide();
-$("#malo2").hide();
-$("#malo3").hide();
-*/
+
 
 $("#linkInicio").on("click", function(e){
 
@@ -42,7 +22,6 @@ $("#linkInicio").on("click", function(e){
         $("#malo2").hide();
     }
     
-
     if(regexEmail.test(email) && email.indexOf('@') != -1 && email != "" && regexPass.test(pass) && pass != ""){
         localStorage.setItem("email", email);
 
@@ -50,9 +29,5 @@ $("#linkInicio").on("click", function(e){
         e.preventDefault();
     }
 });
-
-$("#open-hide").click(function() {
-		$("#menu").toggleClass("show");
-		$("#content").toggleClass("open-menu");
-	}); 
+ 
 });
