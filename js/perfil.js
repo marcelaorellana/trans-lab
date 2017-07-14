@@ -32,7 +32,6 @@ $(document).ready(function(){
 
 //escribe los numeros de tarjetas al recargar
   for(var i = 0; i < localStorage.length; i++){
-    var regexStorage = new RegExp("^([0-9]{8})$");
     var kei = localStorage.key(i);
     var valuee = localStorage.getItem(kei);
     if(kei.startsWith("bip")){

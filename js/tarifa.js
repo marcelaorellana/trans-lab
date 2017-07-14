@@ -5,6 +5,13 @@ $(document).ready(function(){
     $("#content").toggleClass("open-menu");
   });
 
+for(var i = 0; i < localStorage.length; i++){
+    var kei = localStorage.key(i);
+    var valuee = localStorage.getItem(kei);
+    if(kei.startsWith("bip")){
+      $("#tarifa-elegir").append("<option value='" + valuee + "'>" + valuee + "</option>");
+    }   
+}
 
 $("#tarifa-elegir").on("change", function(){
 	$("#input-tarifa").prop('disabled', true);
@@ -13,7 +20,7 @@ $("#tarifa-elegir").on("change", function(){
 $("#boton-tarifa").on("click", function(e){
 	var tarjInput = $("#input-tarifa").val();
 	var tarjSelect = $("#tarifa-elegir").val();
-	var tarifa = parseInt($("#tarifaId").val());
+	var tarifa = $("#tarifaId").val();
 	var valor = "";
 
 	if((tarjInput != "" || tarjSelect != null) && tarifa != null){
@@ -46,8 +53,10 @@ $("#boton-tarifa").on("click", function(e){
 	function verSaldo(bip){
 		var saldo = bip.saldoTarjeta;
 		var saldoNum = saldo.split('$')[1];
-		var saldoFinal = saldoNum - tarifa;
-
+		var sal = saldoNum.split('.');
+		var num = parseInt(sal.join(""));
+		var saldoFinal = num - tarifa;
+		
 		$(".tu-tarifa").empty();
 
 

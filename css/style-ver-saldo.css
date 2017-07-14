@@ -44,3 +44,26 @@ button{
 .tu-saldo .saldo p{
     font-size: 20px;
 }
+
+
+.tu-tarifa{
+    width: 60%;
+    margin: auto;
+}
+.tu-tarifa h3{
+    background-color: #414143;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.tu-tarifa .saldo{
+    height: 10vh;
+    background-color: #FCAD00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tu-tarifa .saldo p{
+    font-size: 20px;
+}
