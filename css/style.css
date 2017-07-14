@@ -1,52 +1,10 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 /*********************color***************************/
 /* gris oscuro #414143
    amarillo #FCAD00
    gris claro #DDDEE0
 /********************fin reset***************************/
-body#inicio-body{
+body{
 	background-color: #414143;
 	font-family: 'Rubik', sans-serif;
 	height: 100vh;
@@ -58,6 +16,7 @@ body#inicio-body{
 .logo img{
 	width: 30%;
 	height: auto;
+	margin: 50px 0 0 0;
 }
 .text-logo{
 	font-weight: 900;
@@ -66,6 +25,7 @@ body#inicio-body{
 }
 .formulario{
 	text-align: center;
+	margin-top: 7vh;
 	
 }
 .form{
@@ -75,9 +35,40 @@ body#inicio-body{
 	width: 80%;
 	margin: auto;
 	display: block;
+	line-height: 40px;
 }
 .malo{
 	display: none;
 	color: white;
 }
+.form button{
+	background-color: #FCAD00;
+	color: #414143;
+	font-size: 20px;
+	border: none;
+	padding: 8px 0;
+}
+.form a{
+	color: white;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%
+}
+.regs p{
+	color: white;
+	text-align: center;
+
+}
+.regs a{
+	color: #FCAD00;
+}
+.regs {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
 

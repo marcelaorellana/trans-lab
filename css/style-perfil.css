@@ -175,15 +175,57 @@ header h3{
     background-image: url("../docs/bike-1.png");
     background-size: cover;
     background-position: center;
-    background-color: pink;
+    background-color: lightgray;
     border-radius: 50%;
-    width: 200px;
-    height: 200px; 
+    width: 150px;
+    height: 150px; 
     margin: auto;
     /* width and height can be anything, as long as they're equal */
 }
-
+.email-text{
+    background-color: white;
+    width: 80%;
+    margin:20px auto;
+    text-align: center;
+    padding: 10px;
+}
+.tarjeta-nueva{
+    width: 100%;
+    text-align: center;
+}
+.tarjeta-nueva input{
+    background-color: transparent;
+    width: 80%;
+    margin:20px auto;
+    text-align: left;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #414143;
+}
 .malo{
     display: none;
+    color: #414143;
+}
+.tarjeta-boton{
+    width: 100%;
+    text-align: center;
+}
+.tarjeta-boton button{
+    width: 80%;
+    margin:20px auto;
+    background-color: #FCAD00; /*amarillo*/
+    padding: 10px 0;
     color: white;
+    font-size: 20px;
+    border: none;
+}
+.tarjetas-guardadas{
+    width: 100%;
+    text-align: center;
+}
+.num-area{
+    width: 80%;
+    margin:20px auto;
+    background-color: white;
+    padding: 5px;
 }

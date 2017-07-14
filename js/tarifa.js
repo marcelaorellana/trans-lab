@@ -52,11 +52,16 @@ $("#boton-tarifa").on("click", function(e){
 
 	function verSaldo(bip){
 		var saldo = bip.saldoTarjeta;
-		var saldoNum = saldo.split('$')[1];
-		var sal = saldoNum.split('.');
-		var num = parseInt(sal.join(""));
-		var saldoFinal = num - tarifa;
+		if(saldo != "---"){
+			var saldoNum = saldo.split('$')[1];
+			var sal = saldoNum.split('.');
+			var num = parseInt(sal.join(""));
+			var saldoFinal = num - tarifa;
+		}else{
+			saldoFinal = "---";
+		}
 		
+
 		$(".tu-tarifa").empty();
 
 

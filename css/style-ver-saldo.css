@@ -2,8 +2,7 @@
 .ver-saldo *{
     display: block;
     width: 90%;
-    margin: auto;
-    margin: 40px;
+    margin: 40px auto;
 }
 input{
     height: 30px;
