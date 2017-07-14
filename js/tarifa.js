@@ -5,20 +5,22 @@ $(document).ready(function(){
     $("#content").toggleClass("open-menu");
   });
 
-$("#elegir").on("change", function(){
-	$("#input-ver").prop('disabled', true);
-	$("#input-ver").val("");
+
+$("#tarifa-elegir").on("change", function(){
+	$("#input-tarifa").prop('disabled', true);
+	$("#input-tarifa").val("");
 });
-$("#boton-ver").on("click", function(e){
-	var tarjInput = $("#input-ver").val();
-	var tarjSelect = $("#elegir").val();
+$("#boton-tarifa").on("click", function(e){
+	var tarjInput = $("#input-tarifa").val();
+	var tarjSelect = $("#tarifa-elegir").val();
+	var tarifa = parseInt($("#tarifaId").val());
 	var valor = "";
 
-	if(tarjInput != "" || tarjSelect != null){
+	if((tarjInput != "" || tarjSelect != null) && tarifa != null){
 		if(tarjInput == ""){
-			valor = $("#elegir").val();
+			valor = $("#tarifa-elegir").val();
 		}else{
-			valor = $("#input-ver").val();
+			valor = $("#input-tarifa").val();
 		}
 
 		$.ajax({
@@ -37,22 +39,32 @@ $("#boton-ver").on("click", function(e){
 			malSaldo();
 		})
 
+	}else{
+		alert("seleccione tarjta y tarifa");
 	}
-
 
 	function verSaldo(bip){
 		var saldo = bip.saldoTarjeta;
-		var texto = ("<h3>SALDO TOTAL</h3><div class='saldo'><p id='saldo-final'>"+ saldo+"</p></div>")
+		var saldoNum = saldo.split('$')[1];
+		var saldoFinal = saldoNum - tarifa;
 
-		$(".tu-saldo").append(texto);
+		$(".tu-tarifa").empty();
+
+
+		texto1 = ("<h3>COSTO PASAJE</h3><div class='saldo'><p id='saldo-final'>"+tarifa+"</p></div>");
+		texto2 = ("<h3>SALDO FINAL</h3><div class='saldo'><p id='saldo-final'>"+saldoFinal+"</p></div>");
+
+		$(".tu-tarifa").append(texto1);
+		$(".tu-tarifa").append(texto2);
 		
 	}
 	function malSaldo(){
-		$(".tu-saldo").append("<h3>SALDO TOTAL</h3><div class='saldo'><p id='saldo-final'>Tarjeta No válida</p></div>")
-	
+		$(".tu-tarifa").empty();
+		$(".tu-tarifa").append("<h3>SALDO TOTAL</h3><div class='saldo'><p id='saldo-final'>Tarjeta No válida</p></div>")
+		
 	}
 
-})
+});
   
 
 

@@ -37,6 +37,8 @@ $("#boton-ver").on("click", function(e){
 			malSaldo();
 		})
 
+	}else{
+		alert("Seleccione una tarjeta");
 	}
 
 
