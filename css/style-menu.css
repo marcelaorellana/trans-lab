@@ -26,6 +26,16 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+@media screen and (min-width: 500px) {
+    body {
+        max-width: 600px;
+        margin: auto;
+    }
+    footer{
+        max-width: 600px;
+        margin: auto;
+    }
+}
 ol, ul {
     list-style: none;
 }

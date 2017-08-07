@@ -1,4 +1,13 @@
-
+@media screen and (min-width: 500px) {
+    body {
+        max-width: 600px;
+        margin: auto;
+    }
+    footer{
+        max-width: 600px;
+        margin: auto;
+    }
+}
 .ver-saldo *{
     display: block;
     width: 90%;
